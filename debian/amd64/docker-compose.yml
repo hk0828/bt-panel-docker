@@ -1,0 +1,14 @@
+version: "2"
+
+services:
+  bt-panel:
+    image: yangxuan8282/bt-panel:debian
+    ports:
+      - "20:20"
+      - "21:21"
+      - "80:80"
+      - "443:443"
+      - "888:888"
+      - "8888:8888"
+    volumes:
+      - "./www:/www"
